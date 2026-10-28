@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Prakarshi Polina: full-stack, Android and computer vision projects.">
+  <meta name="theme-color" content="#f6eddd">
+  <title>Prakarshi Polina — Developer</title>
+
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("theme");
+      const preferredTheme = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches ? "dark" : "light";
+
+      document.documentElement.dataset.theme =
+        savedTheme || preferredTheme;
+    } catch (error) {
+      document.documentElement.dataset.theme = "light";
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="loader" aria-hidden="true">
+    <i></i><i></i><i></i><i></i>
+  </div>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html" aria-label="Prakarshi Polina home"><b>PP</b></a>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#work">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="#contact">Contact</a>
+      <button id="tg" type="button" aria-label="Toggle light and dark theme"></button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <h1>
+        <span class="mask"><span>Prakarshi</span></span>
+        <span class="mask"><span>Polina</span></span>
+      </h1>
+
+      <p>
+        Computer science student who builds full-stack apps,
+        Android tools and computer vision projects.
+      </p>
+
+      <div class="cta">
+        <a class="btn fill" href="#projects">See my projects</a>
+        <a class="btn" href="mailto:prakarshinaishipolina@gmail.com">Email me</a>
+        <a class="btn" href="blog.html">Read my blog</a>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY STRIP -->
+    <div class="marq" aria-label="Technologies">
+      <div>
+        <span>Python</span><span>Java</span><span>JavaScript</span>
+        <span>Kotlin</span><span>React</span><span>Node.js</span>
+        <span>Flask</span><span>MongoDB</span><span>OpenCV</span>
+        <span>SQL</span>
+
+        <span>Python</span><span>Java</span><span>JavaScript</span>
+        <span>Kotlin</span><span>React</span><span>Node.js</span>
+        <span>Flask</span><span>MongoDB</span><span>OpenCV</span>
+        <span>SQL</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="s l">
+        <h2>About</h2>
+
+        <p>
+          I'm a B.Tech Computer Science student at SRM AP University.
+          I like turning messy real-world inputs, such as scanned FIRs,
+          sensor noise, map data and webcam video, into tools people
+          can actually use.
+        </p>
+
+        <p style="margin-top: 1rem">
+          I work across the stack: Node and Flask backends, React
+          frontends and Kotlin on Android, with Python for OCR, NLP,
+          computer vision and machine learning.
+        </p>
+      </div>
+
+      <div class="facts s r">
+        <div>
+          <b>8.67</b>
+          CGPA, B.Tech CSE (2023–2027)
+        </div>
+
+        <div>
+          <b>Java SE 17</b>
+          Oracle certified developer
+        </div>
+
+        <div>
+          <b>6 projects</b>
+          Web, Android and computer vision
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="work">
+      <h2 class="s l">Experience</h2>
+
+      <div class="tl">
+        <div class="tli s l">
+          <time>Feb 2026 – Present</time>
+          <h3>Research Intern, Android Development</h3>
+          <em>SRM AP University, Andhra Pradesh</em>
+
+          <ul>
+            <li>
+              Building a Kotlin app that uses live accelerometer and
+              GPS data to detect potholes and speed bumps, with
+              vehicle-specific sensitivity thresholds.
+            </li>
+            <li>
+              Cut false triggers with a window-based filter that
+              removes gravity from raw readings and flags an event
+              only when vibration is sustained.
+            </li>
+            <li>
+              Stores anomaly type, severity, location and time in a
+              CSV pipeline shown on an admin analytics dashboard.
+            </li>
+          </ul>
+        </div>
+
+        <div class="tli r s r">
+          <time>May 2025 – Aug 2025</time>
+          <h3>Web Development Intern</h3>
+          <em>Edunet Foundation, Remote</em>
+
+          <ul>
+            <li>
+              Built PetPair, a full-stack pet adoption platform on
+              Node.js, Express and MongoDB with separate user and
+              admin workflows.
+            </li>
+            <li>
+              Wrote a matchmaking engine that scores compatibility
+              from living space, activity level and family type.
+            </li>
+            <li>
+              Added JWT role-based auth, protected routes, Multer
+              image uploads and approve/reject/cancel adoption tracking.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="s r">Projects</h2>
+
+      <article class="proj s l">
+        <h3>Balerion Nexus: Crime Report Analysis</h3>
+        <p>
+          Turns scanned crime reports and FIRs into searchable records.
+          OpenCV cleans the image, Tesseract reads it, and spaCy picks
+          out victims, accused, crime type, place and date. Includes a
+          severity predictor and a trends dashboard.
+        </p>
+        <div class="tags">
+          <span>Flask</span><span>Tesseract OCR</span>
+          <span>spaCy</span><span>SQLite</span><span>OpenCV</span>
+        </div>
+        <a class="plink" href="https://github.com/PrakarshiNaishiPolina/Balerion-Nexus" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+      </article>
+
+      <article class="proj s r">
+        <h3>Forest-Nexus</h3>
+        <p>
+          A decision support system for monitoring Forest Rights Act
+          claims. Five GeoJSON map layers for the Warangal region,
+          OCR document processing, a recommendation engine, dispute
+          tracking and live claim status through Firebase.
+        </p>
+        <div class="tags">
+          <span>React.js</span><span>Firebase</span>
+          <span>GeoJSON</span><span>Python</span>
+        </div>
+        <a class="plink" href="https://github.com/PrakarshiNaishiPolina/Forest-Nexus" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+      </article>
+
+      <article class="proj s l">
+        <h3>Road Quality Monitor</h3>
+        <p>
+          An Android app that detects potholes and speed bumps from
+          accelerometer and GPS data. A noise filter strips gravity
+          from the readings, and thresholds are tuned per vehicle.
+          Events are logged and shown on an admin dashboard.
+        </p>
+        <div class="tags">
+          <span>Kotlin</span><span>Android</span>
+          <span>GPS</span><span>Sensors</span>
+        </div>
+        <a class="plink" href="https://github.com/PrakarshiNaishiPolina/Road-Quality_Monitor" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+      </article>
+
+      <article class="proj s r">
+        <h3>PetPair</h3>
+        <p>
+          A pet adoption platform that recommends compatible pets
+          from an adopter's lifestyle, with admin tools to manage
+          pets and track adoption requests.
+        </p>
+        <div class="tags">
+          <span>Node.js</span><span>Express</span>
+          <span>MongoDB</span><span>JWT</span>
+        </div>
+        <a class="plink" href="https://github.com/PrakarshiNaishiPolina/PetPair---Smart-Match-Making-for-Pet-Adoption" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+      </article>
+
+      <article class="proj s l">
+        <h3>Interactive Spider Lily</h3>
+        <p>
+          Grow a flower with your hand. A webcam tracks your thumb
+          and index finger, and the distance between them controls
+          a spider lily that blooms from bud to full flower, drawn
+          live with Bézier curves and a gently swaying stem.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>OpenCV</span>
+          <span>MediaPipe</span><span>NumPy</span>
+        </div>
+        <a class="plink" href="https://github.com/PrakarshiNaishiPolina/spiderlily.exe" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+      </article>
+
+      <article class="proj s r">
+        <h3>Virtual Dressing Room</h3>
+        <p>
+          Try outfits on through your webcam. Pose detection finds
+          your shoulders, the clothing image is overlaid in place,
+          and a hand gesture switches to the next outfit. Built
+          with a team of four.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>OpenCV</span>
+          <span>MediaPipe</span><span>cvzone</span><span>Flask</span>
+        </div>
+        <a class="plink" href="https://github.com/PrakarshiNaishiPolina/Virtual-dressing-room" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+      </article>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="s l">Skills</h2>
+
+      <div class="skills s r">
+        <div>
+          <h3>Languages</h3>
+          <p>Python, Java, C, C++, JavaScript, R, SQL, HTML/CSS</p>
+        </div>
+
+        <div>
+          <h3>Tools</h3>
+          <p>
+            Node.js, Express, Flask, React, Bootstrap, OpenCV,
+            MediaPipe, Tesseract, spaCy, NLTK, scikit-learn,
+            NumPy, Pandas, Matplotlib, MongoDB, SQLite, Firebase,
+            Git, Postman
+          </p>
+        </div>
+
+        <div>
+          <h3>Core CS</h3>
+          <p>
+            Data structures and algorithms, OOP, system design,
+            computer networks, operating systems, Power BI, Tableau
+          </p>
+        </div>
+      </div>
+
+      <ul class="certs s l" style="margin-top: 3rem">
+        <li><b>Oracle</b> Java SE 17 Developer</li>
+        <li><b>SAP</b> Generative AI Developer</li>
+        <li><b>Coursera</b> Machine Learning Specialization courses</li>
+        <li><b>Udemy</b> Complete SQL Bootcamp</li>
+        <li><b>IBM SkillsBuild</b> HTML &amp; CSS, Data Visualization with R</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h2 class="s r">
+        <a href="mailto:prakarshinaishipolina@gmail.com">
+          Let's build something.
+        </a>
+      </h2>
+
+      <div class="links s l">
+        <a class="btn fill" href="mailto:prakarshinaishipolina@gmail.com">Send an email</a>
+        <a class="btn" href="https://github.com/PrakarshiNaishiPolina" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/prakarshi-polina-87aa5131b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn" href="blog.html">My blog</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Prakarshi Polina</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
