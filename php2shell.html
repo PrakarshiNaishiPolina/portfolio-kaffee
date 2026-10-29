@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Understand PHP2Shell, AI-assisted vulnerability research, security warnings, and precautionary website shutdowns.">
+  <meta name="theme-color" content="#f6eddd">
+  <title>PHP2Shell: AI, Security Warnings and Website Outages — Prakarshi Polina</title>
+
+  <script>
+    try {
+      document.documentElement.dataset.theme =
+        localStorage.getItem("theme") ||
+        (matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark" : "light");
+    } catch (e) {
+      document.documentElement.dataset.theme = "light";
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="loader" aria-hidden="true">
+    <i></i><i></i><i></i><i></i>
+  </div>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html"><b>PP</b></a>
+    <div>
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#contact">Contact</a>
+      <button id="tg" type="button" aria-label="Toggle light and dark theme"></button>
+    </div>
+  </nav>
+
+  <main class="blog-page">
+    <article class="blog-article">
+      <header class="article-header">
+        <a href="blog.html" class="back-link">← Back to all articles</a>
+
+        <p class="eyebrow">CYBERSECURITY, WITHOUT THE HEADACHE</p>
+
+        <h2>PHP2Shell, AI, FBI warnings, and the websites that went offline</h2>
+
+        <div class="article-meta">
+          <span>By Prakarshi Polina</span>
+          <span>October 28, 2026</span>
+          <span>8 min read</span>
+        </div>
+      </header>
+
+      <figure class="article-cover">
+        <img
+          src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=1600&q=85"
+          alt="Computer workstation representing cybersecurity research">
+        <figcaption>
+          The internet depends on software most of us never see.
+          Photo: <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a>.
+        </figcaption>
+      </figure>
+
+      <div class="article-content">
+        <p class="article-lead">
+          Imagine opening the internet one morning and discovering that
+          familiar websites and online services are temporarily offline.
+          It doesn't necessarily mean hackers have broken in. Sometimes,
+          organisations take services offline because staying online
+          could be the bigger risk.
+        </p>
+
+        <p>
+          The PHP2Shell story brings together software vulnerabilities,
+          AI-assisted security research, government warnings, and the
+          difficult decisions organisations make when a serious weakness
+          is discovered. Let's unpack the concepts without turning this
+          into a lecture full of technical jargon.
+        </p>
+
+        <h3>First things first: what is PHP?</h3>
+
+        <p>
+          Imagine a website as a restaurant. The page you see is the dining
+          area, while the server-side software is the kitchen doing the
+          work: processing forms, retrieving information, and communicating
+          with databases.
+        </p>
+
+        <p>
+          PHP is a programming language commonly used to power that
+          behind-the-scenes work. If a weakness exists in a widely used
+          component, many different websites may need to check whether
+          their systems are affected.
+        </p>
+
+        <h3>What is PHP2Shell?</h3>
+
+        <p>
+          PHP2Shell is the name used in reports about serious PHP security
+          vulnerabilities. The central concern in this kind of issue is
+          that an attacker may be able to exploit a flaw in a server's
+          software to make it perform actions that were never intended.
+        </p>
+
+        <p>
+          Security researchers call one particularly dangerous category
+          <strong>remote code execution</strong>. In simple terms, this
+          means a vulnerable computer could potentially be made to run
+          instructions supplied by someone connecting over a network.
+          The actual risk depends on the affected version, configuration,
+          and whether the vulnerable component is reachable.
+        </p>
+
+        <aside class="article-callout">
+          <p class="eyebrow">A QUICK REALITY CHECK</p>
+          <p>
+            A critical vulnerability rating does not mean every website
+            was hacked. A system can be vulnerable without being attacked,
+            and an attack does not automatically mean the attacker succeeded.
+          </p>
+        </aside>
+
+        <h3>How did AI fit into the story?</h3>
+
+        <p>
+          AI tools can help security researchers examine complicated code,
+          develop hypotheses, test ideas, and understand how software
+          behaves in unusual situations. This can make some research tasks
+          faster, but it does not remove the need for expert review,
+          careful testing, and responsible disclosure.
+        </p>
+
+        <p>
+          AI is not automatically a security solution or a security threat.
+          Its impact depends on how people use it. The same broad ability
+          to analyse code can help defenders discover flaws and can also
+          assist malicious actors.
+        </p>
+
+        <h3>Why would a website go offline?</h3>
+
+        <p>
+          Think of a shop discovering that its front-door lock may be
+          defective. The owner might close temporarily while repairing it.
+          That is inconvenient, but it may be safer than leaving the
+          entrance exposed.
+        </p>
+
+        <p>
+          Organisations may similarly restrict an online service while
+          they assess a vulnerability, apply an update, or confirm that
+          the system is safe to restore. A shutdown by itself is not
+          evidence that customer information was stolen.
+        </p>
+
+        <h3>Vulnerable, attacked, or compromised?</h3>
+
+        <ul class="article-list">
+          <li><strong>Vulnerable:</strong> the system contains a weakness that could be exploited.</li>
+          <li><strong>Under attack:</strong> someone is attempting to exploit a weakness.</li>
+          <li><strong>Compromised:</strong> an attacker has successfully gained unauthorised access or control.</li>
+        </ul>
+
+        <p>
+          These terms describe different situations. Responsible reporting
+          should distinguish a precautionary shutdown from a confirmed
+          intrusion and should not label an organisation as hacked without
+          reliable evidence.
+        </p>
+
+        <h3>What should organisations do?</h3>
+
+        <ul class="article-list">
+          <li>Identify the PHP versions and systems they operate.</li>
+          <li>Check official advisories and determine which systems are affected.</li>
+          <li>Apply the appropriate vendor security updates.</li>
+          <li>Review logs and investigate signs of compromise where appropriate.</li>
+          <li>Temporarily restrict exposed services if necessary while following official guidance.</li>
+        </ul>
+
+        <h3>My takeaway</h3>
+
+        <p>
+          The internet can look like millions of independent websites,
+          but many of those sites depend on shared software. That makes
+          common building blocks incredibly useful — and keeping them
+          secure everyone's business.
+        </p>
+
+        <p>
+          AI can help researchers investigate software weaknesses, but
+          it cannot replace sound engineering, verification, responsible
+          disclosure, or the work of maintaining and updating systems.
+        </p>
+
+        <p>
+          And when a website goes offline during a security response,
+          remember that the shutdown may be a defensive decision rather
+          than proof that attackers have won.
+        </p>
+
+        <div class="article-sources">
+          <h3>Further reading</h3>
+          <ul class="article-list">
+            <li><a href="https://www.php.net/" target="_blank" rel="noopener noreferrer">Official PHP website and security information</a></li>
+            <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer">CISA Known Exploited Vulnerabilities Catalog</a></li>
+            <li><a href="https://www.wiz.io/" target="_blank" rel="noopener noreferrer">Wiz security research</a></li>
+          </ul>
+        </div>
+
+        <p><a class="back-link" href="blog.html">← Back to all articles</a></p>
+      </div>
+    </article>
+  </main>
+
+  <footer>© <span id="y"></span> Prakarshi Polina</footer>
+  <script src="script.js"></script>
+</body>
+</html>

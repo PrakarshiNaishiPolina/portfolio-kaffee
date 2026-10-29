@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Technology, cybersecurity, financial markets and stories explained simply by Prakarshi Polina.">
+  <meta name="theme-color" content="#f6eddd">
+  <title>Blog — Prakarshi Polina</title>
+
+  <script>
+    try {
+      document.documentElement.dataset.theme =
+        localStorage.getItem("theme") ||
+        (matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark" : "light");
+    } catch (e) {
+      document.documentElement.dataset.theme = "light";
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="loader" aria-hidden="true">
+    <i></i><i></i><i></i><i></i>
+  </div>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html" aria-label="Home"><b>PP</b></a>
+    <div>
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#contact">Contact</a>
+      <button id="tg" type="button" aria-label="Toggle light and dark theme"></button>
+    </div>
+  </nav>
+
+  <main class="blog-page">
+
+    <header class="blog-hero">
+      <p class="eyebrow">A LITTLE CORNER OF THE INTERNET</p>
+      <h1>Things I find<br><span>worth talking about.</span></h1>
+      <p>
+        Cybersecurity rabbit holes, financial market crashes,
+        technology, and the stories behind the headlines.
+        No boring lectures — just curiosity and context.
+      </p>
+      <div class="blog-note">
+        Two stories to start with. More rabbit holes coming soon.
+      </div>
+    </header>
+
+    <section class="blog-list" id="latest">
+      <div class="blog-section-heading">
+        <div>
+          <p class="eyebrow">EXPLORE THE STORIES</p>
+          <h2>Latest writing</h2>
+        </div>
+        <span class="blog-count">02 POSTS</span>
+      </div>
+
+      <!-- ARTICLE 1 -->
+      <article class="blog-card">
+        <a class="blog-image-link"
+           href="php2shell.html"
+           aria-label="Read the PHP2Shell article">
+          <img
+            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1400&q=85"
+            alt="Digital cybersecurity network"
+            loading="lazy">
+          <span class="image-label">CYBERSECURITY / INTERNET</span>
+        </a>
+
+        <div class="blog-card-body">
+          <p class="post-date">
+            <time datetime="2026-10-28">Published October 28, 2026</time>
+            · 8 min read
+          </p>
+
+          <h3>
+            <a href="php2shell.html">
+              PHP2Shell, AI, FBI warnings, and the websites that went offline
+            </a>
+          </h3>
+
+          <p>
+            Two serious PHP vulnerabilities, AI-assisted security
+            research, urgent warnings, and why organisations temporarily
+            restricted some online services to protect themselves.
+          </p>
+
+          <a class="read-link" href="php2shell.html">
+            Read the article ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- ARTICLE 2 -->
+      <article class="blog-card">
+        <a class="blog-image-link"
+           href="china-market-crash.html"
+           aria-label="Read the Chinese market crash article">
+          <img
+            src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=1400&q=85"
+            alt="Modern city financial district"
+            loading="lazy">
+          <span class="image-label">MARKETS / MONEY</span>
+        </a>
+
+        <div class="blog-card-body">
+          <p class="post-date">
+            <time datetime="2026-10-29">Published October 29, 2026</time>
+            · 7 min read
+          </p>
+
+          <h3>
+            <a href="china-market-crash.html">
+              China's market crash: where did the money go?
+            </a>
+          </h3>
+
+          <p>
+            Billions in market value disappeared from the headlines.
+            Discover why stock prices fell, who actually lost money,
+            and what a market crash means for ordinary people.
+          </p>
+
+          <a class="read-link" href="china-market-crash.html">
+            Read the article ↗
+          </a>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="y"></span> Prakarshi Polina
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
